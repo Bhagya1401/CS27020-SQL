@@ -5,9 +5,9 @@
     <class>entities.Student</class>
     <class>entities.Module</class>
     <properties>
-      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://db.dcs.aber.ac.uk:5432/cs27020_21_22_bhw"/>
+      <property name="javax.persistence.jdbc.url" value="xxxxxxx"/>
       <property name="javax.persistence.jdbc.user" value="xxxxx"/>
-      <property name="javax.persistence.jdbc.password" value="xxxx"/>
+      <property name="javax.persistence.jdbc.password" value="xxxxxx"/>
       <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
     </properties>
   </persistence-unit>
