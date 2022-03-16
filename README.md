@@ -1,2 +1,2 @@
-# CS23820-C-and-C++
-Contains all of the coding worksheets and assignments I have completed in this module
+# CS27020 SQL
+Contains all of the SQL worksheets I have completed in this module
