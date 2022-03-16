@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="nwh@db.dcs.aber.ac.uk" uuid="f14b1b69-8c77-4ee5-8fed-7896a16a23d9">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://db.dcs.aber.ac.uk:5432/nwh</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="cs27020_21_22_bhw@db.dcs.aber.ac.uk" uuid="2ea4a61c-ca4c-46fd-8f92-87f429f85617">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://db.dcs.aber.ac.uk:5432/cs27020_21_22_bhw</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>

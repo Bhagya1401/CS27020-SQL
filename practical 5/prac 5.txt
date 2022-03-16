@@ -1,0 +1,49 @@
+1)Title, Persona, Speaker, Persona group, Line, Scene, Speech, Prolouge, Act, Credits(FM), Scene Description, Play subscript, Stage Directions
+
+b)Personae is stored individually and in groups, groups are described using the <GRPDESC> tage
+
+2a)/PLAY/ACT/SCENE/STAGEDIR/text()
+
+b)/PLAY/ACT[2]/SCENE/STAGEDIR/text()
+
+c)/PLAY/ACT/SCENE[1]/SPEECH[1]/SPEAKER[1]/text()
+
+
+3a)
+doc("/db/apps/demo/data/macbeth.xml")//ACT[1]/SCENE[3]/TITLE/text()
+
+b)
+for $x in doc("/db/apps/demo/data/r_and_j.xml")//SCENE
+where $x/SPEECH/SPEAKER = 'MERCUTIO'
+return $x/TITLE/text()
+
+
+4a)
+Direct output: outputs a formatted webpage  
+HTML: shows the output in HTML standard
+Text: outputs hamlet.xml file's content as raw text
+
+
+b)Hamlet and Macbeth have an identical layout 
+The direct output option result appears to be a raw text file of data
+The as xsl for macbeth and hamlet is suited for the structure of the modial file and therefore it is improperrly formatted.
+
+c)the html table structure is used to display the contents of the SPEECH tag,
+
+<xsl:template match="SPEECH">
+        <table border="0" cellpadding="5" cellspacing="5" width="100%">
+            <tr>
+                <td width="20%" valign="top">
+                    <div class="speaker">
+                        <xsl:apply-templates select="SPEAKER"/>
+                    </div>
+                </td>
+                <td width="4%"/>
+                <td width="76%" valign="top">
+                    <verse>
+                        <xsl:apply-templates select="LINE|STAGEDIR"/>
+                    </verse>
+                </td>
+            </tr>
+        </table>
+    </xsl:template>
